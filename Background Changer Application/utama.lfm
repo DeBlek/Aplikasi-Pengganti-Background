@@ -1,0 +1,238 @@
+object Form1: TForm1
+  Left = 10
+  Height = 396
+  Top = 158
+  Width = 1340
+  Caption = 'Background Changer'
+  ClientHeight = 396
+  ClientWidth = 1340
+  LCLVersion = '2.2.4.0'
+  object ScrollBox1: TScrollBox
+    Left = 10
+    Height = 310
+    Top = 8
+    Width = 430
+    HorzScrollBar.Page = 100
+    VertScrollBar.Page = 98
+    ClientHeight = 306
+    ClientWidth = 426
+    TabOrder = 0
+    object Image1: TImage
+      Left = 10
+      Height = 90
+      Top = 8
+      Width = 90
+      AutoSize = True
+    end
+    object Image2: TImage
+      Left = 10
+      Height = 90
+      Top = 8
+      Width = 90
+      AutoSize = True
+      OnMouseDown = Image2MouseDown
+      OnMouseMove = Image2MouseMove
+      OnMouseUp = Image2MouseUp
+      Transparent = True
+    end
+  end
+  object ScrollBox2: TScrollBox
+    Left = 888
+    Height = 310
+    Top = 8
+    Width = 430
+    HorzScrollBar.Page = 100
+    VertScrollBar.Page = 100
+    ClientHeight = 306
+    ClientWidth = 426
+    TabOrder = 1
+    object Image3: TImage
+      Left = 10
+      Height = 90
+      Top = 10
+      Width = 90
+      AutoSize = True
+    end
+  end
+  object Button1: TButton
+    Left = 10
+    Height = 25
+    Top = 328
+    Width = 75
+    Caption = 'Load'
+    OnClick = Button1Click
+    TabOrder = 2
+  end
+  object Button2: TButton
+    Left = 10
+    Height = 25
+    Top = 360
+    Width = 75
+    Caption = 'Save'
+    OnClick = Button2Click
+    TabOrder = 3
+  end
+  object Button3: TButton
+    Left = 96
+    Height = 25
+    Top = 360
+    Width = 123
+    Caption = 'Change Backgruond'
+    OnClick = Timer1Timer
+    TabOrder = 4
+  end
+  object Label1: TLabel
+    Left = 232
+    Height = 15
+    Top = 334
+    Width = 52
+    Caption = 'Threshold'
+    ParentColor = False
+  end
+  object CheckBox1: TCheckBox
+    Left = 376
+    Height = 19
+    Top = 328
+    Width = 131
+    Caption = 'Automatic Threshold'
+    Checked = True
+    State = cbChecked
+    TabOrder = 5
+  end
+  object Edit1: TEdit
+    Left = 288
+    Height = 23
+    Top = 330
+    Width = 80
+    TabOrder = 6
+    Text = '0'
+  end
+  object Label2: TLabel
+    Left = 232
+    Height = 15
+    Top = 360
+    Width = 38
+    Caption = 'K Value'
+    ParentColor = False
+  end
+  object Edit2: TEdit
+    Left = 288
+    Height = 23
+    Top = 360
+    Width = 80
+    TabOrder = 7
+    Text = '3'
+  end
+  object Label3: TLabel
+    Left = 376
+    Height = 15
+    Top = 360
+    Width = 52
+    Caption = 'Koordinat'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 440
+    Height = 15
+    Top = 360
+    Width = 6
+    Caption = '0'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 472
+    Height = 15
+    Top = 360
+    Width = 6
+    Caption = '0'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 504
+    Height = 15
+    Top = 360
+    Width = 6
+    Caption = '0'
+    ParentColor = False
+  end
+  object Label7: TLabel
+    Left = 536
+    Height = 15
+    Top = 360
+    Width = 6
+    Caption = '0'
+    ParentColor = False
+  end
+  object ColorBox1: TColorBox
+    Left = 520
+    Height = 22
+    Top = 328
+    Width = 100
+    Selected = clLime
+    ItemHeight = 16
+    TabOrder = 8
+  end
+  object ScrollBox3: TScrollBox
+    Left = 448
+    Height = 310
+    Top = 8
+    Width = 430
+    HorzScrollBar.Page = 100
+    VertScrollBar.Page = 98
+    ClientHeight = 306
+    ClientWidth = 426
+    TabOrder = 9
+    object Image4: TImage
+      Left = 10
+      Height = 90
+      Top = 8
+      Width = 90
+      AutoSize = True
+    end
+  end
+  object Button4: TButton
+    Left = 96
+    Height = 25
+    Top = 328
+    Width = 123
+    Caption = 'Load Background'
+    OnClick = Button4Click
+    TabOrder = 10
+  end
+  object CheckBox2: TCheckBox
+    Left = 632
+    Height = 19
+    Top = 328
+    Width = 129
+    Caption = 'Colored Background'
+    Checked = True
+    State = cbChecked
+    TabOrder = 11
+  end
+  object Button5: TButton
+    Left = 768
+    Height = 25
+    Top = 328
+    Width = 75
+    Caption = 'Tutorial'
+    OnClick = Button5Click
+    TabOrder = 12
+  end
+  object SavePictureDialog1: TSavePictureDialog
+    Left = 16
+    Top = 416
+  end
+  object OpenPictureDialog1: TOpenPictureDialog
+    Left = 45
+    Top = 416
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 104
+    Top = 416
+  end
+  object OpenPictureDialog2: TOpenPictureDialog
+    Left = 72
+    Top = 416
+  end
+end
